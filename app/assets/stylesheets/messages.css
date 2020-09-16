@@ -14,12 +14,50 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  /* ２つの要素の間を等間隔に開ける */
+  align-items: center;
+  /* 縦方向に中央揃え */
 }
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+  /* 文字のアンダーラインを無効化 */
+}
+
+.create-room {
+  font-size: 10px;
+}
+
+.create-room a {
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
+/* 要素のボックスからroom名がはみ出てもスクロールできるようにしている */
 }
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
+
 
 .chat {
   background-color: #ffffff;
